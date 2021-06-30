@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="scripts.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forcast</title>
+</head>
+
+<body>
+
+    <div id="everything">
+
+        <!--top banner with user click cities-->
+        <!--maybe try to use JS to make top bar static 
+    scrolling-->
+
+        <div class="tiptop">
+            <h1 class="dow">DoJoWeather</h1>
+            <div class="where">
+                <div class="city"><a href="#" onclick="confirm_alert()">Burbank</a></div>
+                <div class="city"><a href="#" onclick="confirm_alert()">Chicago</a></div>
+                <div class="city"><a href="#" onclick="confirm_alert()">Dallas</a></div>
+            </div>
+        </div>
+
+        <div class="mylocal ">
+            <!--add city and drop down menu for temp-->
+            <div class="mycit ">
+                <h2>San Jose</h2>
+            </div>
+            <div class="temp ">
+                <h2>Show temperature in</h2>
+            </div>
+        </div>
+
+        <div class="weathbox ">
+            <!--in css create the boxes and space them out use flex-->
+            <div class="itswhat ">
+                <h2>Today</h2>
+                <img class="sky " src="./images/some_rain.png " alt="rain ">
+                <p class="feels ">Some Rain</p>
+                <div class="degs ">
+                    <span style="color: blue ">23.9°</span>
+                </div>
+                <div class="degs ">
+                    <span style="color: red ">18.3°</span></div>
+            </div>
+
+            <div class="itswhat ">
+                <h2>Tomorrow</h2>
+                <img class="sky " src="./images/some_sun.png " alt="sun ">
+                <p class="feels ">Some Sun</p>
+                <div class="degs ">
+                    <span style="color: blue ">26.7°</span></div>
+                <div class="degs ">
+                    <span style="color: red ">18.9°</span></div>
+            </div>
+
+            <div class="itswhat ">
+                <h2>Friday</h2>
+                <img class="sky " src="./images/some_clouds.png " alt="clouds ">
+                <p class="feels ">Some Clouds</p>
+                <div class="degs ">
+                    <span style="color:blue ">20.6°</span></div>
+                <div class="degs ">
+                    <span style="color: red ">16.1°</span></div>
+            </div>
+
+            <div class="itswhat ">
+                <h2>Saturday</h2>
+                <img class="sky " src="./images/some_sun.png " alt="sun1 ">
+                <p class="feels ">Some Rain</p>
+                <div class="degs ">
+                    <span style="color:blue ">25.6°</span></div>
+                <div class="degs ">
+                    <span style="color:red ">21.1°</span></div>
+            </div>
+
+        </div>
+
+        <!--add pop up w/ js click interaction ie make it diappear-->
+        <div id="pop">
+            <div class="myCoo">
+                <div>    
+                    <h2>STOP! Cookie time!</h2>
+                </div>
+                <div>
+                    <h4>
+                        We use cookies (sadly not the edible ones) to personalize content and ads, 
+                        to provide social medial features and to analyse our traffic.
+                    </h4>
+                </div>
+                <div>
+                    <button name="button" id="btn" onclick="show_hide()">I agree</button>
+                </div>
+            </div>
+        </div> <!--bottom of pop-->
+        <!--I'm the bottom of everything-->
+    </div>
+
+</body>
+<script src="scripts.js"></script>
+</html>
